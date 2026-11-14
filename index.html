@@ -192,7 +192,7 @@ footer a{color:#fff}
     }).then(function (r) {
       if (!r.ok) { throw new Error('Request failed'); }
       form.reset();
-      form.hidden = true;
+      form.style.display = 'none';
       status.className = 'status ok';
       status.textContent = 'Thank you. We have your request and will reply within one working day.';
       status.focus();
@@ -206,4 +206,3 @@ footer a{color:#fff}
 })();
 </script>
 </body>
-</html>
