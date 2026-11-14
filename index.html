@@ -140,10 +140,11 @@ footer a{color:#fff}
   <div class="form-wrap">
    <h2 class="serif">Request a free quote</h2>
    <p>Tell us what you need and we will reply within one working day.</p>
-   <!-- Replace YOUR_FORM_ID with the ID from your free Formspree form (formspree.io) -->
-   <form id="quote-form" action="https://formspree.io/f/xoedalnw" method="POST">
-    <input type="hidden" name="_subject" value="New quote request from the website">
-    <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+   <form id="quote-form" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="PASTE_YOUR_FULL_WEB3FORMS_KEY_HERE">
+    <input type="hidden" name="subject" value="New quote request from the website">
+    <input type="hidden" name="from_name" value="Massen Group Website">
+    <div class="hp" aria-hidden="true"><label>Leave this empty<input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label></div>
     <div class="field"><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
     <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
     <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
